@@ -1,0 +1,26 @@
+.container {
+  // width: 1050px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  // outline: 3px solid red;
+
+  // MOBILE
+  @media screen and (min-width: 280px) {
+    width: 280px;
+    // padding-top: 125px;
+    // padding-bottom: 98px;
+  }
+
+  // TABLET
+  @media screen and (min-width: 700px) {
+    width: 700px;
+  }
+
+  // DESCKTOP
+  @media screen and (min-width: 1050px) {
+    width: 1050px;
+  }
+}
