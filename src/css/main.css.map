@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "utilit/_variables.scss",
+        "general/_common.scss",
+        "general/_fonts.scss",
+        "components/_header.scss",
+        "components/_hero.scss",
+        "components/_products.scss",
+        "components/_production.scss",
+        "components/_gallery.scss",
+        "components/_comments.scss",
+        "components/_contacts.scss",
+        "components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
