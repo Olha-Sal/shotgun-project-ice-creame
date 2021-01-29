@@ -1,0 +1,47 @@
+.hero {
+    background-color: $accent-text-pink;
+}
+
+.hero-heading {
+font-family: TitanOne400;
+font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $white;
+}
+
+.hero-passion {
+font-family: TitanOne400;
+font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+
+.hero-red-btn {
+    max-width: 63px;
+    padding: 9px 0;
+    margin-right: 8px;
+    color: $white;
+    font-family: DM-Sanse400;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 50%;
+    background-color:$primary-text-pink;
+}
+
+.hero-white-btn {
+    max-width: 83px;
+    padding: 9px 0;
+    color: $primary-text-pink;
+    font-family: DM-Sanse400;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 50%;
+    background-color: $white;
+}
