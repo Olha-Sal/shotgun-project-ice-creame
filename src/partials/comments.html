@@ -1,23 +1,34 @@
 <section class="comments">
   <picture>
-    <source srcset="./image/comment-section/girl1.png" />
-    <!-- <source srcset="../image/comment-section/girl2.png 1x, ./images/img2/img2-tab@2x.jpg 2x" /> -->
-    <!-- <source srcset="./images/img2/img2-mob.jpg 1x, ./images/img2/img2-mob@2x.jpg 2x" /> -->
+    <source srcset="./image/comment-section/girl1.png 1x, ./image/comment-section/girl1@2x.png 2x" />
+    <source srcset="./image/comment-section/girl2.png 1x, ./image/comment-section/girl2@2x.png 2x" />
+    <source srcset="./image/comment-section/girl3.png 1x, ./image/comment-section/girl1.png 2x" />
     <img src="./image/comment-section/girl1.png" alt="" />
   </picture>
   <p class="comments-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
     nulla quam nunc, accumsan
     congue. Lorem ipsum primis in nibh vel risus.</p>
-
-
-  <p>Emily, Los Angeles</p>
-  <svg>
-    <use href="">Домик</use>
-  </svg>
-  <svg>
-    <use href="">Кружок</use>
-  </svg>
-  <svg>
-    <use href="">Кружок</use>
-  </svg>
+    <div class="comment-icon">
+      <svg width="4" height="4">
+        <use href="./image/comment-section/symbol-defs.svg#icon-ellipse"></use>
+      </svg>
+      <svg width="4" height="4">
+        <use href="./image/comment-section/symbol-defs.svg#icon-ellipse"></use>
+      </svg>
+      <svg width="4" height="4">
+        <use href="./image/comment-section/symbol-defs.svg#icon-ellipse"></use>
+      </svg>
+    </div>
+  <p class="comments-location">Emily, Los Angeles</p>
+  <div>
+    <svg width="4" height="4">
+      <use href="./image/comment-section/symbol-defs.svg#icon-home">Домик</use>
+    </svg>
+    <svg width="4" height="4">
+      <use href="">Кружок</use>
+    </svg>
+    <svg width="13" height="4">
+      <use href="">Кружок</use>
+    </svg>
+  </div>
 </section>
