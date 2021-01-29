@@ -13,16 +13,26 @@
   margin: 20px;
   padding: 45px 66px 25px 57px;
   background-color: #fafafa;
+  text-decoration: underline;
 }
 
-.comments-text::before {
-  background-image: url();
-}
+// .comments-text::before {
+//   background-image: url(../image/comment-section/symbol-defs.svg#icon-untitled);
+// }
 
 .comment-icon {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
+
+.comment-icon_top {
+  fill: #c7133e;
+}
+.comment-icon_top:not(:last-child) {
+  margin-right: 10px;
+}
+
 .comments-location {
   font-family: DM Sans;
   font-style: normal;
@@ -30,4 +40,15 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.comment-slider {
+}
+
+.comment-slider:not(:first-child) {
+  fill: #d9d9d9;
+}
+.comment-slider:not(:last-child) {
+  margin-right: 18px;
 }
