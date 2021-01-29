@@ -422,8 +422,8 @@ img {
 }
 
 .comment-icon {
-  align-items: center;
-  fill: #c7133e;
+  display: flex;
+  justify-content: center;
 }
 
 .comments-location {
