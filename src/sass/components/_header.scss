@@ -13,7 +13,7 @@
 }
 
 .header.section {
-  background-color: #ffb8ca;
+  background-color: $header-bg-color;
   font-family: DM Sans;
 
   @media screen and (max-width: 767px) {
@@ -125,7 +125,7 @@ label {
   padding: 17px 0;
   text-transform: uppercase;
   line-height: 2em;
-  background-color: #e17992;
+  background-color: $menu-bg-color;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   transform: translateX(-100%);
