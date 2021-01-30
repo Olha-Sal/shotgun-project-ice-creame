@@ -1,0 +1,18 @@
+.gallery {
+  max-width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(to bottom, #fff5f6 40%, ffffff 60%);
+}
+
+.gallery-photo-size {
+  @media screen and(max-width:699px) {
+    width: 280px;
+  }
+  @media screen and(min-width:700px) and(max-width:1049) {
+    width: 700px;
+  }
+  @media screen and(min-width:1050px) {
+    width: 1050px;
+  }
+}
