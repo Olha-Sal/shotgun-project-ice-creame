@@ -6,13 +6,5 @@
 }
 
 .gallery-photo-size {
-  @media screen and(max-width:699px) {
-    width: 280px;
-  }
-  @media screen and(min-width:700px) and(max-width:1049) {
-    width: 700px;
-  }
-  @media screen and(min-width:1050px) {
-    width: 1050px;
-  }
+  width: 100%;
 }
