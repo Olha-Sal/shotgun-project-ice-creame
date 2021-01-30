@@ -490,12 +490,18 @@ img {
 @media screen and (min-width: 768px) {
   .products-picture {
     width: 220px;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(0%, -46%);
+            transform: translate(0%, -46%);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .products-picture {
-    width: 500px;
+    width: 335px;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
   }
 }
 

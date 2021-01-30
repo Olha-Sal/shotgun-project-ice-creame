@@ -70,11 +70,18 @@
     width: 249px;
 
     @media screen and (min-width: 768px) {
-        width: 220px;         
+        width: 220px;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, -46%);         
     }
 
     @media screen and (min-width: 1200px) {
-        width: 500px;           
+        width: 335px;
+        // top: 50%;
+        // left: 50%;
+        transform: translate(0%, 0%);    
+            
     }
 }
 
