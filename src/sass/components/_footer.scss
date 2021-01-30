@@ -1,0 +1,90 @@
+footer .container {
+  background-color: #fff5f6;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 320px;
+}
+footer .slogan {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  width: 234px;
+  height: 135px;
+}
+footer .slogan h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 17px;
+}
+footer .slogan h2 {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+footer .social-icon .icon {
+  fill: #ffffff;
+}
+footer .social-icon li {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fea5bb;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+footer .contact-us {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .social-icon {
+  display: block;
+  display: flex;
+  width: 152.5px;
+  height: 32px;
+  justify-content: space-between;
+}
+footer .contact-us span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+}
+footer .tel {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #d41443;
+}
+footer .telefon {
+  width: 230px;
+  height: 22px;
+  margin-top: 46px;
+}
+footer .copiright span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  color: #907e82;
+}
+footer .copiright {
+  text-align: center;
+  padding: 22px 76px 25px 64px;
+  border-top: 1px solid #e1e1e1;
+  margin-left: -20px;
+  width: 320px;
+}
