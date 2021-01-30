@@ -94,7 +94,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+ monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -338,10 +339,12 @@ img {
 }
 
 .hero {
+  position: relative;
   background-color: #ffa5ba;
 }
 
 .hero-heading {
+  margin-bottom: 19px;
   font-family: TitanOne400;
   font-weight: 400;
   font-size: 26px;
@@ -361,7 +364,8 @@ img {
 }
 
 .hero-red-btn {
-  max-width: 63px;
+  width: 63px;
+  height: 24px;
   padding: 9px 0;
   margin-right: 8px;
   color: #ffffff;
@@ -369,21 +373,30 @@ img {
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
-  border-radius: 50%;
+  border: none;
+  border-radius: 11px;
   background-color: #d41443;
 }
 
+.hero-red-btn:hover,
+.hero-red-btn:focus {
+  background-color: #c7133e;
+}
+
 .hero-white-btn {
-  max-width: 83px;
+  width: 83px;
+  height: 24px;
   padding: 9px 0;
   color: #d41443;
   font-family: DM-Sanse400;
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
-  border-radius: 50%;
+  border: none;
+  border-radius: 11px;
   background-color: #ffffff;
 }
+
 
 .products {
   background-color: #ffffff;
@@ -502,6 +515,11 @@ img {
   background-image: url(../image/products/arrow-right.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  
+.hero-white-btn:hover,
+.hero-white-btn:focus {
+  background-color: #ecebeb;
+
 }
 
 .production.section {
