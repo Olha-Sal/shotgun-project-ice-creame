@@ -3,45 +3,57 @@
     <p class="production-pretitle">tradition and love</p>
     <h2 class="production-title">how it’s made?</h2>
 
-    <picture>
-      <source
-        srcset="
-          ./image/production-section/cow-mobile.png    1x,
-          ./image/production-section/cow-mobile-2x.png 2x
-        "
-      />
+    <div class="production-content">
+      <div class="production-picture">
+        <picture>
+          <source
+            srcset="
+              ./image/production-section/cow-mobile.png    1x,
+              ./image/production-section/cow-mobile-2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="
+              ./image/production-section/cow-tablet.png    1x,
+              ./image/production-section/cow-tablet-2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
 
-      <img
-        class="production-img"
-        src="./image/production-section/cow-mobile.png"
-        alt="Изображение коровы"
-      />
-    </picture>
+          <img
+            class="production-img"
+            src="./image/production-section/cow-mobile.png"
+            alt="Изображение коровы"
+          />
+        </picture>
+      </div>
 
-    <div class="production-description">
-      <p class="production-text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-        justo fringilla.
-      </p>
-      <p class="production-text gray">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt.
-        <br />
-        <br />
-        Aliquam erat volutpat. Aenean accumsan.
-      </p>
-      <a class="production-button" href="">
-        Read More
-        <svg class="production-button-icon" width="12" height="12">
-          <use href="./image/sprite.svg#arrowhead"></use>
-        </svg>
-      </a>
+      <div class="production-description">
+        <p class="production-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="production-text gray breaker">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+          <br />
+          <br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <a class="production-button" href="">
+          Read More
+          <svg class="production-button-icon" width="12" height="12">
+            <use href="./image/sprite.svg#arrowhead"></use>
+          </svg>
+        </a>
+      </div>
     </div>
 
-    <ul>
+    <ul class="production-ingridients">
       <li class="production-item">
         <img
           class="production-icons"
