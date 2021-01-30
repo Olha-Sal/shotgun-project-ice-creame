@@ -1,9 +1,52 @@
 .hero {
-    background-color: $accent-text-pink;
+    height: 502px;
+    padding-top: 193px;
+    position: relative;
+    background-color: rgba(255,184,202,1);
+    overflow: hidden;
+    // background-image: url(./../image/hero-section/hero-mob.png);
+    // background-repeat: no-repeat;
+    // background-position: contain;
+}
+
+// .hero-ice-cream {
+//     position: absolute;
+//     right: 32px;
+//     bottom: o;
+// }
+
+.hero-ice-cream {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+#circle {
+    position: absolute;
+    bottom: 75px;
+    // transform: translateY(-50%);
+    width: 346px;
+    height: 346px;
+    -webkit-border-radius: 173px;
+    -moz-border-radius: 173px;
+    border-radius: 173px;
+    background: $accent-text-pink;
+    z-index: 0;
+  }
+
+.hero-text-block {
+    position: absolute;
+    transform: translateY(-50% + 43);
+align-self: center;
+z-index: 2;
 }
 
 .hero-heading {
-font-family: TitanOne400;
+display: inline-block;
+width: 218px;
+margin-bottom: 19px;
+font-family: Titan One;
 font-weight: 400;
 font-size: 26px;
 line-height: 30px;
@@ -13,35 +56,58 @@ color: $white;
 }
 
 .hero-passion {
-font-family: TitanOne400;
+font-family: Titan One;
 font-weight: 400;
-font-size: 26px;
-line-height: 30px;
+font-size: 41px;
+line-height: 50px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
+color: $primary-text-pink;
 }
 
 .hero-red-btn {
-    max-width: 63px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 63px;
+    height: 24px;
     padding: 9px 0;
     margin-right: 8px;
     color: $white;
-    font-family: DM-Sanse400;
+    font-family: DM Sans;
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
-    border-radius: 50%;
+    border: none;
+    border-radius: 11px;
     background-color:$primary-text-pink;
 }
 
+.hero-red-btn:hover,
+.hero-red-btn:focus {
+    background-color: rgba(199,19,62,1);
+}
+
 .hero-white-btn {
-    max-width: 83px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 83px;
+    height: 24px;
     padding: 9px 0;
     color: $primary-text-pink;
-    font-family: DM-Sanse400;
+    font-family:  DM Sans;
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
-    border-radius: 50%;
+    border: none;
+    border-radius: 11px;
     background-color: $white;
+}
+
+.hero-white-btn:hover,
+.hero-white-btn:focus {
+    background-color: rgba(236,235,235,1);
 }
