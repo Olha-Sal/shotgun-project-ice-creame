@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'DM-Sanse400';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/DMSanse/DM-Sans-Regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../fonts/DMSanse/DM-Sans-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/DMSanse/DM-Sans-Regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/DMSanse/DM-Sans-Regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../../fonts/DMSanse/DM-Sans-Regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../fonts/DMSanse/DM-Sans-Regular.svg#DM-Sanse') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'DM-Sanse500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../fonts/DMSanse/DM-Sans-Medium.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../fonts/DMSanse/DM-Sans-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/DMSanse/DM-Sans-Medium.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/DMSanse/DM-Sans-Medium.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../../fonts/DMSanse/DM-Sans-Medium.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../fonts/DMSanse/DM-Sans-Medium.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'DM-Sanse700';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/DMSanse/DM-Sans-Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../fonts/DMSanse/DM-Sans-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/DMSanse/DM-Sans-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/DMSanse/DM-Sans-Bold.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../../fonts/DMSanse/DM-Sans-Bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../fonts/DMSanse/DM-Sans-Bold.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'TitanOne400';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/TitanOne/Titan-One.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../../fonts/TitanOne/Titan-One.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/TitanOne/Titan-One.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/TitanOne/Titan-One.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../../fonts/TitanOne/Titan-One.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../../fonts/TitanOne/Titan-One.svg#Roboto')
+      format('svg'); /* Legacy iOS */
+}

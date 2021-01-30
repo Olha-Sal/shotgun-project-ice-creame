@@ -1,0 +1,119 @@
+.production.section {
+  background-color: $secondary-bg-color;
+  font-family: DM Sans;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 125px;
+    padding-bottom: 145px;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../image/production-section/bg-mobile.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-size: contain;
+    background-image: url('../image/production-section/bg-mobile-2x.png');
+  }
+}
+
+.production-pretitle {
+  margin-bottom: 15px;
+
+  text-align: center;
+  font-family: Titan One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $accent-text-pink;
+}
+
+.production-title {
+  margin-bottom: 26px;
+  text-align: center;
+  font-family: Titan One;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: $primary-text-pink;
+}
+
+.production-img {
+  margin-bottom: 46px;
+}
+
+.production-description {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+.production-text {
+  margin-bottom: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+
+  &.gray {
+    color: $primary-text-color;
+  }
+}
+
+.production-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 176px;
+  height: 44px;
+
+  background-color: $white;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $primary-text-pink;
+
+  &-icon {
+    margin-left: 14px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bg-color;
+  }
+}
+
+.production-item {
+  margin-bottom: 38px;
+}
+
+.production-icons {
+  margin-bottom: 16px;
+}
+
+.production-qty {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: $primary-text-pink;
+}
+
+.production-qty-text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+}
