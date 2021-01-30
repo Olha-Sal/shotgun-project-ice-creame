@@ -8,19 +8,19 @@
   // outline: 3px solid red;
 
   // MOBILE
-  @media screen and (min-width: 280px) {
-    width: 280px;
+  @media screen and (min-width: 320px) {
+    width: 310px;
     // padding-top: 125px;
     // padding-bottom: 98px;
   }
 
   // TABLET
-  @media screen and (min-width: 700px) {
-    width: 700px;
+  @media screen and (min-width: 768px) {
+    width: 730px;
   }
 
   // DESCKTOP
-  @media screen and (min-width: 1050px) {
-    width: 1050px;
+  @media screen and (min-width: 1200px) {
+    width: 1080px;
   }
 }
