@@ -12,7 +12,11 @@
     /* Modern Browsers */ url('../fonts/DMSanse/DM-Sans-Regular.ttf')
       format('truetype'),
     /* Safari, Android, iOS */
+<<<<<<< HEAD
+      url('../fonts/DMSanse/DM-Sans-Regular.svg#DMSanse') format('svg'); /* Legacy iOS */
+=======
       url('../fonts/DMSanse/DM-Sans-Regular.svg#DM-Sanse') format('svg'); /* Legacy iOS */
+>>>>>>> f1464ffcf7e79a435cc4685da90a885d921d7206
 }
 
 @font-face {
@@ -28,8 +32,13 @@
       format('woff'),
     /* Modern Browsers */ url('../fonts/DMSanse/DM-Sans-Medium.ttf')
       format('truetype'),
+<<<<<<< HEAD
+    /* Safari, Android, iOS */
+      url('../fonts/DMSanse/DM-Sans-Medium.svg#DMSanse') format('svg'); /* Legacy iOS */
+=======
     /* Safari, Android, iOS */ url('../fonts/DMSanse/DM-Sans-Medium.svg#Roboto')
       format('svg'); /* Legacy iOS */
+>>>>>>> f1464ffcf7e79a435cc4685da90a885d921d7206
 }
 
 @font-face {
@@ -44,7 +53,11 @@
       format('woff'),
     /* Modern Browsers */ url('../fonts/DMSanse/DM-Sans-Bold.ttf')
       format('truetype'),
+<<<<<<< HEAD
+    /* Safari, Android, iOS */ url('../fonts/DMSanse/DM-Sans-Bold.svg#DMSanse')
+=======
     /* Safari, Android, iOS */ url('../fonts/DMSanse/DM-Sans-Bold.svg#Roboto')
+>>>>>>> f1464ffcf7e79a435cc4685da90a885d921d7206
       format('svg'); /* Legacy iOS */
 }
 
@@ -60,6 +73,10 @@
       format('woff'),
     /* Modern Browsers */ url('../fonts/TitanOne/Titan-One.ttf')
       format('truetype'),
+<<<<<<< HEAD
+    /* Safari, Android, iOS */ url('../fonts/TitanOne/Titan-One.svg#TitanOne')
+=======
     /* Safari, Android, iOS */ url('../fonts/TitanOne/Titan-One.svg#Roboto')
+>>>>>>> f1464ffcf7e79a435cc4685da90a885d921d7206
       format('svg'); /* Legacy iOS */
 }
