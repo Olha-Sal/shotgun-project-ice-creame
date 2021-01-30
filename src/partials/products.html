@@ -1,31 +1,61 @@
 <section class="products">
-  <h3>100% natural</h3>
-  <h2>products</h2>
-  <ul>
-    <li>
-      <img src="#" alt="Мороженко с клубничкой">
-      <h3>ice cream</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore
-        magna
-        aliqua facilisis.</p>
-      <img src="#" alt="кнопка со стрелкой">
-      <img src="./image/products/ice-cream-m.png" alt="">
-    </li>
-    <li>
-      <img src="#" alt="Коктейль">
-      <h3>ice coffee</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore
-        magna
-        aliqua facilisis.</p>
-      <img src="#" alt="кнопка со стрелкой">
-    </li>
-    <li>
-      <img src="#" alt="Милк Шейк">
-      <h3>milkshakes</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore
-        magna
-        aliqua facilisis.</p>
-      <img src="#" alt="кнопка со стрелкой">
-    </li>
-  </ul>
+  <div class="container">
+      <h3 class="products-title-h3">100% natural</h3>
+      <h2 class="products-title-h2">products</h2>
+      <ul>
+      <li class="products-item">
+          <picture class="products-picture">
+              <source srcset="
+              ./image/products/ice-cream-m.png 1x,
+              ./image/products/ice-cream-m@2x.png 2x 
+              "
+               media="(max-width:767px)" />
+              <img src="./image/products/ice-cream-m.png" 
+              alt="ice-cream" 
+              />
+          </picture>
+          <h4 class="products-title-h4">ice cream</h4>
+          <span class="dots-icon"></span>
+          <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore
+          magna aliqua facilisis.</p>
+          <a href="" class="arrow-icon"></a>
+      </li>
+
+      <li class="products-item">
+          <picture class="products-picture">
+              <source srcset="
+              ./image/products/ice-coffee-m.png 1x,
+              ./image/products/ice-coffee-m@2x.png 2x 
+              "
+               media="(max-width:767px)" />
+              <img src="./image/products/ice-coffee-m.png" 
+              alt="ice-coffee" 
+              />
+          </picture class="products-picture">
+          <h4 class="products-title-h4">ice coffee</h4>
+          <span class="dots-icon"></span>
+          <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore
+          magna aliqua facilisis.</p>
+          <a href="" class="arrow-icon"></a>
+      </li>
+
+      <li class="products-item">
+          <picture class="products-picture">
+              <source srcset="
+              ./image/products/milk-shake-m.png 1x,
+              ./image/products/milk-shake-m@2x.png 2x 
+              "
+               media="(max-width:767px)" />
+              <img src="./image/products/milk-shake-m.png" 
+              alt="milk-shake" 
+              />
+          </picture>
+          <h4 class="products-title-h4">milkshakes</h4>
+          <span class="dots-icon"></span>
+          <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore
+          magna aliqua facilisis.</p>
+          <a href="" class="arrow-icon"></a>
+      </li>
+      </ul>
+  </div>
 </section>
