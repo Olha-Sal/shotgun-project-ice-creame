@@ -8,6 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
     rel="stylesheet" />
   <!--<link rel="stylesheet" href="./css/main.css"> -->
+
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+
   <title>Ice Cream</title>
 </head>
 
@@ -24,6 +28,16 @@
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./menu.js"></script>
   <script src="./index.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.rev_slider').slick()
+    });
+  </script>
 </body>
 
 </html>
