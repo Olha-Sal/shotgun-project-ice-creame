@@ -11,13 +11,30 @@
 .comment-box {
   background-color: $bg-comment;
   position: relative;
-  width: 100%;
+  text-align: center;
+  max-width: 100%;
   height: 308px;
   margin-bottom: 30px;
+  padding: 43px 50px 24px 60px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 620px;
+    padding: 47px 36px 34px 60px;
+    height: 165px;
+  }
+}
+.underline {
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 28px,
+    $border-color 29px,
+    $border-color 30px
+  );
 }
 
 .comments-text {
-  padding: 43px 62px 24px 62px;
+  width: 160px;
   display: block;
   position: absolute;
   color: $black;
@@ -30,7 +47,13 @@
   margin-right: auto;
   letter-spacing: 0.04em;
   z-index: 10;
-  text-decoration: underline;
+  // text-decoration: underline;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
 }
 
 .quotes {
@@ -39,13 +62,13 @@
   left: 65px;
   z-index: 1;
 }
-.dots-list {
+.circle-list {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
 }
 
-.dots-item {
+.circle-item {
   display: block;
   width: 4px;
   height: 4px;
