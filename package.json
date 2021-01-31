@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/Olha-Sal/shotgun-project-ice-creme",
+  "homepage": "https://olha-sal.github.io/shotgun-project-ice-creme/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
