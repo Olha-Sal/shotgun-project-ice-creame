@@ -2,10 +2,10 @@
   min-width: 320px;
   background-color: $header-bg-color;
   overflow: hidden;
-  height: 440px;
+  height: 502px;
 
   @media screen and (min-width: 768px) {
-    height: 349px;
+    height: 399px;
     overflow: inherit;
   }
 
@@ -17,16 +17,23 @@
 .container.hero-flex {
   display: flex;
   position: relative;
-  align-items: flex-end;
   height: 100%;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-end;
+  }
   }
 
 .hero-left-block {
-    padding-top: 52px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    margin-right: 110px;
+    padding-top: 193px;
+
+    @media screen and (min-width: 768px) {
+    padding-top: 102px;
     padding-bottom: 28px;
+    margin-right: 110px;
+    }
     
   @media screen and (min-width: 1200px) {
     padding-top: 172px;
@@ -36,15 +43,15 @@
 
 .hero-text-block {
     @media screen and (max-width: 767px) {
-    position: absolute;
-    bottom: 160px;
+    // position: absolute;
+    // bottom: 160px;
     z-index: 2;
     }
     @media screen and (min-width: 768px) {
-      display: inline-flex;
+      display: flex;
       width: 162px;
       flex-direction: column;
-      position: inherit;
+      // position: inherit;
       margin-bottom: 19px;
     }
     @media screen and (min-width: 1200px) {
@@ -68,13 +75,14 @@
     width: 162px;
     font-size: 22px;
     line-height: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 277px;
     font-size: 38px;
     line-height: 44px;
+    margin-bottom: 20px;
   }
 }
 
@@ -156,7 +164,7 @@
 
 .hero-white-btn:hover,
 .hero-white-btn:focus {
-  background-color: rgba(236, 235, 235, 1);
+  background-color: $btn-hover-bg-color;
 }
 
 .hero-milk-thumb {
@@ -179,6 +187,20 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 6px;
+}
+
+.hero-milk-tab {
+  display: none;  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;  
+  }
+}
+
+.hero-milk-desk {
+  display: none;  
+  @media screen and (min-width: 1200px) {
+    display: block;  
+  }
 }
 
 .hero-milk-text {
@@ -296,12 +318,47 @@
   }
 }
 
-.hero-girl-tab {
+.hero-right-block {
   display: none;
-  @media screen and (min-width:768px) and (max-width:1199px) {
+  @media screen and (min-width: 768px){
+   display: flex; 
+   flex-direction: column;
+   align-items: flex-end;
+  }
+}
+
+.hero-numbers-tab {
+  display: none;
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+  display: flex;
+  flex-direction: column;
+    margin-bottom: 72px;
+}
+}
+
+.hero-numbers-desk {
+  display: none;
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 110px;
+  }
+}
+
+.hero-16-tab {
+  margin-bottom: 13px;
+}
+
+.hero-16-desk {
+  margin-bottom: 15px;
+}
+
+.hero-girl-tab {
   display: inline-block;
   margin-top: auto;
   z-index: 3;
+  @media screen and (min-width:1200px) {
+    display: none;
   }
 }
 
@@ -314,18 +371,3 @@
   }
 }
 
-.hero-milk-tab,
-.hero-girl-tab {
-  display: none;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-  }
-}
-
-.hero-milk-desk,
-.hero-girl-desk {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
-}
