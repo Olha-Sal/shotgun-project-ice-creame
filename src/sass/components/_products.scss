@@ -14,7 +14,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 129px;
+        padding-top: 127px;
         padding-bottom: 119px;    
     }
 }
@@ -24,6 +24,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: -10px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin: -12px;
     }
 }
 
@@ -58,31 +61,29 @@
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 6 * 12px) / 3);
-        margin: 12px;           
+        margin: 12px;     
+        padding: 163px 44px 50px;      
     }
 }
 
 .products-picture {
     display: block;
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -144%);
-    width: 249px;
+    transform: translate(-50%, 0%);
 
+    @media screen and (max-width: 767px) {
+        top: -23%;        
+        width: 249px;      
+    }  
+    
     @media screen and (min-width: 768px) {
-        width: 220px;
-        top: 0%;
-        left: 0%;
-        transform: translate(0%, -46%);         
+        top: -19%;  
+        width: 100%;   
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 335px;
-        // top: 50%;
-        // left: 50%;
-        transform: translate(0%, 0%);    
-            
+    @media screen and (min-width: 1200px) {       
+        top: -37%;        
     }
 }
 
@@ -102,9 +103,16 @@
     letter-spacing: 0.04em;
     color: $primary-text-pink;
     margin-bottom: 144px;
+
     @media screen and (min-width: 768px) {
         font-size: 48px;
         margin-bottom: 150px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        margin-bottom: 259px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
     }
 }
 
@@ -115,6 +123,11 @@
     margin-bottom: 15px;
     @media screen and (min-width: 768px) {
         font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -137,6 +150,10 @@
     @media screen and (min-width: 768px) {
         line-height: 1.76;
         margin: 30px 0px 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        margin: 32px 0px 62px;
     }
 }
 

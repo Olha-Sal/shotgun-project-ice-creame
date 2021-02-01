@@ -1,24 +1,24 @@
 {
-  "name": "shotgun-project-ice-creme",
+  "name": "parcel-project-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://olha-sal.github.io/shotgun-project-ice-creme",
+  "homepage": "https://Olha.Sal.github.io/shotgun-project-ice-creame",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /shotgun-project-ice-creme/",
+    "predeploy": "npm run build -- --public-url /shotgun-project-ice-creame/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Olha-Sal/shotgun-project-ice-creme.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Olha Saliakina <kosyuk.o@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Olha-Sal/shotgun-project-ice-creme/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
