@@ -94,7 +94,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -310,8 +310,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container {
@@ -919,14 +917,22 @@ img {
 .products-picture {
   display: block;
   position: absolute;
-  top: -23%;
-  left: 0%;
-  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+@media screen and (max-width: 767px) {
+  .products-picture {
+    top: -23%;
+    width: 249px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .products-picture {
     top: -19%;
+    width: 100%;
   }
 }
 
@@ -1057,7 +1063,7 @@ img {
 @media screen and (min-width: 768px) {
   .production.section {
     padding-top: 130px;
-    padding-bottom: 248px;
+    padding-bottom: 246px;
   }
 }
 
@@ -1088,6 +1094,13 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../image/production-section/bg-desktop.png");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .production.section {
+    background-size: contain;
+    background-image: url("../image/production-section/bg-desktop-2x.png");
   }
 }
 
@@ -1289,6 +1302,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .production-item {
+    width: 230px;
     margin-bottom: 38px;
   }
 }
@@ -1384,27 +1398,76 @@ img {
 }
 
 .gallery {
-  max-width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(60%, ffffff));
-  background-image: linear-gradient(to bottom, #fff5f6 40%, ffffff 60%);
-}
-
-.gallery-photo-size {
-  width: 100%;
+  padding-bottom: 60px;
 }
 
 .comments {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  display: block;
+  max-width: 280px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .comments {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comments {
+    min-width: 620px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments {
+    max-width: 926px;
+  }
+}
+
+.rev_slider {
+  padding-top: 80px;
+  padding-bottom: 170px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .rev_slider {
+    padding-bottom: 197px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rev_slider {
+    padding-bottom: 234px;
+  }
+}
+
+.slider {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 .slider img {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .slider img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider img {
+    margin-bottom: 15px;
+  }
 }
 
 .comment-box {
@@ -1419,36 +1482,51 @@ img {
 
 @media screen and (min-width: 768px) {
   .comment-box {
-    min-width: 620px;
-    padding: 47px 36px 34px 60px;
+    width: 620px;
     height: 165px;
+    margin-bottom: 24px;
+    padding-top: 50px;
+    padding-left: 80px;
   }
 }
 
-.underline {
-  background-image: repeating-linear-gradient(180deg, transparent, transparent 28px, #e1e1e1 29px, #e1e1e1 30px);
+@media screen and (min-width: 1200px) {
+  .comment-box {
+    width: 936px;
+    height: 140px;
+    margin-bottom: 15px;
+  }
 }
 
 .comments-text {
-  width: 160px;
+  width: 180px;
   display: block;
   position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #000000;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 255%;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 31px;
   letter-spacing: 0.04em;
   z-index: 10;
+  background: repeating-linear-gradient(to bottom, #e1e1e1 0px, transparent 1px, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+  background-position: center bottom 3px;
 }
 
 @media screen and (min-width: 768px) {
   .comments-text {
-    width: 600px;
-    margin-left: 50px;
-    margin-right: 20px;
+    width: 460px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments-text {
+    width: 750px;
+    font-size: 16px;
   }
 }
 
@@ -1457,6 +1535,20 @@ img {
   top: 28px;
   left: 65px;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .quotes {
+    top: 30px;
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quotes {
+    top: 32px;
+    left: 50px;
+  }
 }
 
 .circle-list {
@@ -1492,13 +1584,23 @@ img {
 }
 
 .comments-location {
-  font-family: DM Sans;
+  color: #000000;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 26px;
-  text-align: center;
-  margin-bottom: 30px;
+  line-height: 1.85;
+}
+
+@media screen and (min-width: 768px) {
+  .comments-location {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments-location {
+    font-size: 20px;
+  }
 }
 
 .comment-slider:not(:first-child) {
