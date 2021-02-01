@@ -1,8 +1,27 @@
+footer {
+  min-width: 320px;
+  background-color: $secondary-bg-color;
+}
+
 footer .container {
-  background-color: #fff5f6;
-  padding: 0 20px;
+  padding: 113px 20px 0 20px;
   margin: 0 auto;
   width: 320px;
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    height: 439px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 158px 36px 0 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+    height: 377px;
+    padding-left: 114px;
+    padding-right: 116px;
+    padding-top: 165px;
+  }
 }
 footer .slogan {
   font-family: Titan One;
@@ -10,24 +29,52 @@ footer .slogan {
   font-weight: 400;
   width: 234px;
   height: 135px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    height: 190px;
+    padding-top: 7px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 477px;
+    height: 115px;
+    padding: 0;
+  }
 }
 footer .slogan h3 {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $accent-text-pink;
   margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 15px;
+  }
 }
 footer .slogan h2 {
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $primary-text-pink;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
 }
 footer .social-icon .icon {
-  fill: #ffffff;
+  fill: $white;
 }
 footer .social-icon li {
   display: block;
@@ -38,6 +85,19 @@ footer .social-icon li {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      background-color: $primary-text-pink;
+    }
+  }
 }
 footer .contact-us {
   padding-top: 43px;
@@ -45,6 +105,15 @@ footer .contact-us {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @media screen and (min-width: 768px) {
+    width: 268px;
+    height: 106px;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 319px;
+    height: 114px;
+  }
 }
 footer .social-icon {
   display: block;
@@ -52,39 +121,86 @@ footer .social-icon {
   width: 152.5px;
   height: 32px;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 151px;
+    height: 34px;
+    padding-right: 5px;
+  }
 }
-footer .contact-us span {
+footer .telefon span {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
   line-height: 1.86;
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0.02em;
+  }
 }
 footer .tel {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 1.86;
-  color: #d41443;
+  color: $primary-text-pink;
 }
 footer .telefon {
   width: 230px;
   height: 22px;
   margin-top: 46px;
+  font-size: 12px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+    width: 319px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 footer .copiright span {
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  color: #907e82;
+  color: $primary-text-color;
 }
 footer .copiright {
   text-align: center;
   padding: 22px 76px 25px 64px;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid $border-color;
   margin-left: -20px;
-  width: 320px;
+  min-width: 320px;
+  @media screen and (min-width: 1200px) {
+    padding: 9px 76px 10px 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .svg-github {
+    width: 20px;
+    height: 20px;
+  }
+  footer .svg-telegram {
+    width: 20.4px;
+    height: 15.9px;
+  }
+  footer .svg-facebook {
+    width: 19px;
+    height: 43px;
+  }
+  .copiright br {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .slogan br {
+    display: none;
+  }
 }

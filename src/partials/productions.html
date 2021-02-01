@@ -8,10 +8,10 @@
         <picture>
           <source
             srcset="
-              ./image/production-section/cow-mobile.png    1x,
-              ./image/production-section/cow-mobile-2x.png 2x
+              ./image/production-section/cow-desktop.png    1x,
+              ./image/production-section/cow-desktop-2x.png 2x
             "
-            media="(max-width:767px)"
+            media="(min-width:1200px)"
           />
           <source
             srcset="
@@ -20,7 +20,13 @@
             "
             media="(min-width:768px)"
           />
-
+          <source
+            srcset="
+              ./image/production-section/cow-mobile.png    1x,
+              ./image/production-section/cow-mobile-2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
           <img
             class="production-img"
             src="./image/production-section/cow-mobile.png"
