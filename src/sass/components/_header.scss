@@ -56,8 +56,8 @@ label {
   transition: left 0.23s;
   z-index: 3;
   width: 30px;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
+  //-webkit-transform: translateZ(0);
+  //-webkit-backface-visibility: hidden;
 
   @media screen and (min-width: 768px) {
     margin-top: 40px;
@@ -100,7 +100,7 @@ label {
 }
 
 .nav-check:checked ~ .nav-showmenu span.first {
-  -webkit-transform: rotate(45deg);
+  //-webkit-transform: rotate(45deg);
   top: 10px;
   background-color: $white;
 }
@@ -110,7 +110,7 @@ label {
 }
 
 .nav-check:checked ~ .nav-showmenu span.third {
-  -webkit-transform: rotate(-45deg);
+  //-webkit-transform: rotate(-45deg);
   top: -10px;
   background-color: $white;
 }
@@ -129,8 +129,8 @@ label {
   left: -200px;
   transition: left 0.2s;
   z-index: 2;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
+  //-webkit-transform: translateZ(0);
+  //-webkit-backface-visibility: hidden;
 
   @media screen and (min-width: 1200px) {
     display: flex;
