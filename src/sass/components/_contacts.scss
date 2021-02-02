@@ -65,6 +65,8 @@
     background-color: $white;
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    transform: scale(1);
+
 
     &:first-child {
         margin-top: -84px;
@@ -87,6 +89,11 @@
         height: 572px;
         margin-top: -102px;
         padding: 51px 44px 62px 43px;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+        }
     }
 }
 .contacts-item {
@@ -107,6 +114,7 @@
     } 
 
     & .contacts-txt {
+        font-weight: 500;
         font-size: 12px;
         line-height: 1.8;
         color: $primary-text-color;
@@ -118,7 +126,6 @@
         @media screen and (min-width: 1200px) {
             font-size: 16px;
             line-height: 1.83;
-            letter-spacing: 0.04em;
         }
     }
     &:first-child {
@@ -235,6 +242,7 @@
 }
 .contacts-address {
     margin-top: 25px;
+    font-weight: 500;
 
     @media screen and (min-width: 768px) {
         margin-top: 30px;
@@ -291,6 +299,8 @@
     width: 161px;
     height: 44px;
     border-radius: 22px;
+    // transform: scale(1);
+
     cursor: pointer;
     
     & .contacts-button {
@@ -322,6 +332,11 @@
     @media screen and (min-width: 1200px) {
         width: 198px;
         margin-right: 15px;
+
+        // &:hover,
+        // &:focus {
+        //     transform: scale(1.05);
+        // }
     }
 }
 .white {
@@ -341,8 +356,10 @@
         margin-right: 15px;
     }
     
-    &:hover {
+    &:hover,
+    &:focus {
         color: $primary-text-pink;
-        background-color: $btn-hover-bg-color;   
+        background-color: $btn-hover-bg-color;
+        // transform: scale(1.05);
     }
 }
