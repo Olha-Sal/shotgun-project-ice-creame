@@ -1650,12 +1650,14 @@ label {
   margin-top: 20px;
   font-size: 12px;
   color: #c7133e;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.slider .slick-dots li .slick-active button {
+.slider .slick-dots li .slick-active button::before {
+  background-image: url(/sprite.751bcee6.svg#home);
   width: 13px;
   height: 12px;
-  color: #c7133e;
 }
 
 .slider img {
@@ -1707,7 +1709,7 @@ label {
   padding-left: 10px;
   padding-right: 10px;
   color: #000000;
-  font-family: "DM-Sanse500" serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
