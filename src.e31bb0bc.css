@@ -370,7 +370,6 @@ img {
   /* Legacy iOS */
 }
 .header {
-  position: relative;
   z-index: 5;
 }
 
@@ -385,7 +384,8 @@ img {
 }
 
 .navigation img {
-  margin-top: 6px;
+  margin-top: 20px;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .navigation img {
@@ -394,7 +394,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .navigation img {
-    margin-right: 92px;
+    position: absolute;
+    margin-top: 37px;
   }
 }
 
@@ -424,20 +425,19 @@ label {
 .nav-showmenu {
   background-color: none;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
   position: absolute;
-  top: 5px;
   left: 90%;
   cursor: pointer;
   transition: left 0.23s;
-  z-index: 3;
+  z-index: 6;
   width: 30px;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
 @media screen and (min-width: 768px) {
   .nav-showmenu {
-    margin-top: 40px;
+    margin-top: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -499,7 +499,7 @@ label {
 
 .menu {
   display: block;
-  position: fixed;
+  position: absolute;
   list-style: none;
   padding: 10px;
   margin: 0;
@@ -509,19 +509,17 @@ label {
   top: 0;
   left: -200px;
   transition: left 0.2s;
-  z-index: 2;
+  z-index: 5;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
 @media screen and (min-width: 1200px) {
   .menu {
     display: flex;
-    justify-content: space-between;
-    text-align: left;
-    margin-top: 45px;
-    margin-left: 550px;
+    align-items: center;
+    left: 500px;
     position: absolute;
-    height: 100px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -547,20 +545,19 @@ label {
   line-height: 18px;
   font-weight: 700;
   padding-inline-start: 0px;
-  margin-left: 21px;
   align-items: center;
-  margin-bottom: 23px;
   text-decoration: none;
   color: #ffffff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-list-item {
     margin-bottom: 23px;
+    margin-left: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu-list-item:not(:last-child) {
-    margin-right: 23px;
+    margin-right: 35px;
     white-space: nowrap;
     font-size: 16px;
   }
@@ -589,6 +586,7 @@ label {
     font-weight: 700;
     line-height: 18px;
     display: inline-block;
+    margin-bottom: 23px;
   }
 }
 .menu-list-link:hover, .menu-list-link:focus {
@@ -596,7 +594,7 @@ label {
 }
 
 .btn {
-  margin-top: 60px;
+  margin-top: 85px;
   cursor: pointer;
   align-items: center;
   text-align: center;
@@ -610,6 +608,7 @@ label {
 @media screen and (min-width: 1200px) {
   .btn {
     margin-right: 150px;
+    display: none;
     margin-top: 0px;
   }
 }
@@ -671,7 +670,6 @@ label {
 }
 @media screen and (min-width: 1200px) {
   .button {
-    margin-top: 34px;
     margin-bottom: 0px;
   }
 }
@@ -1650,14 +1648,12 @@ label {
   margin-top: 20px;
   font-size: 12px;
   color: #c7133e;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-.slider .slick-dots li .slick-active button::before {
-  background-image: url(/sprite.751bcee6.svg#home);
+.slider .slick-dots li .slick-active button {
   width: 13px;
   height: 12px;
+  color: #c7133e;
 }
 
 .slider img {
@@ -1709,7 +1705,6 @@ label {
   padding-left: 10px;
   padding-right: 10px;
   color: #000000;
-  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1813,19 +1808,6 @@ label {
     z-index: 3;
   }
 }
-.contacts .contacts-txt {
-  font-family: "DM-Sanse500";
-  font-size: 12px;
-  line-height: 1.8;
-  color: #907e82;
-}
-.contacts b {
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.85;
-  letter-spacing: 0.04em;
-}
 
 .contacts-div {
   margin-top: 170px;
@@ -1866,6 +1848,8 @@ label {
   padding: 43px 21px 43px 20px;
   width: 220px;
   height: 427px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -1880,6 +1864,7 @@ label {
 }
 @media screen and (min-width: 768px) {
   .contacts-card {
+    font-size: 14px;
     height: 544px;
     margin-top: -78px;
     padding: 50px 32px 50px 31px;
@@ -1887,6 +1872,7 @@ label {
 }
 @media screen and (min-width: 1200px) {
   .contacts-card {
+    font-size: 16px;
     width: 330px;
     height: 572px;
     margin-top: -102px;
@@ -1894,6 +1880,42 @@ label {
   }
 }
 
+.contacts-item b {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .contacts-item b {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-item b {
+    font-size: 16px;
+  }
+}
+.contacts-item .contacts-txt {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .contacts-item .contacts-txt {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-item .contacts-txt {
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+  }
+}
 .contacts-item:first-child {
   margin-bottom: 25px;
 }
@@ -1975,6 +1997,16 @@ label {
 .monday p:last-child {
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .monday p:last-child {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .monday p:last-child {
+    margin-bottom: 15px;
+  }
+}
 
 .weekend {
   position: relative;
@@ -2004,16 +2036,36 @@ label {
 }
 
 .contacts-address {
-  font-family: "DM-Sanse500";
   margin-top: 25px;
 }
+@media screen and (min-width: 768px) {
+  .contacts-address {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-address {
+    margin-top: 32px;
+  }
+}
 .contacts-address a {
-  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .contacts-address a {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-address a {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 /* BUTTONS */
@@ -2051,7 +2103,8 @@ label {
   cursor: pointer;
 }
 .contacts-link .contacts-button {
-  font-family: "DM-Sanse500";
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
 }
@@ -2064,7 +2117,7 @@ label {
 .red {
   margin-bottom: 10px;
   color: #ffffff;
-  background: #d41443;
+  background: #D41342;
 }
 .red .contacts-arrow {
   fill: currentColor;
@@ -2100,6 +2153,10 @@ label {
     width: 180px;
     margin-right: 15px;
   }
+}
+.white:hover {
+  color: #d41443;
+  background-color: #ecebeb;
 }
 
 footer {
