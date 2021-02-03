@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -1644,18 +1645,6 @@ label {
   text-align: center;
 }
 
-.slider .slick-dots li button::before {
-  margin-top: 20px;
-  font-size: 12px;
-  color: #c7133e;
-}
-
-.slider .slick-dots li .slick-active button {
-  width: 13px;
-  height: 12px;
-  color: #c7133e;
-}
-
 .slider img {
   margin-bottom: 30px;
   margin-left: auto;
@@ -1788,6 +1777,79 @@ label {
   }
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -80px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  height: 70px;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: #d41443;
+  opacity: 0.6;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.15;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  content: url("/home.b3b1daf9.svg");
+  opacity: 0.8;
+  color: #d41443;
+}
+
 .contacts {
   background-color: #fff5f6;
 }
@@ -1853,6 +1915,7 @@ label {
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  transform: scale(1);
 }
 .contacts-card:first-child {
   margin-top: -84px;
@@ -1878,6 +1941,9 @@ label {
     margin-top: -102px;
     padding: 51px 44px 62px 43px;
   }
+  .contacts-card:hover, .contacts-card:focus {
+    transform: scale(1.05);
+  }
 }
 
 .contacts-item b {
@@ -1899,6 +1965,7 @@ label {
   }
 }
 .contacts-item .contacts-txt {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
   color: #907e82;
@@ -1913,7 +1980,6 @@ label {
   .contacts-item .contacts-txt {
     font-size: 16px;
     line-height: 1.83;
-    letter-spacing: 0.04em;
   }
 }
 .contacts-item:first-child {
@@ -2037,6 +2103,7 @@ label {
 
 .contacts-address {
   margin-top: 25px;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .contacts-address {
@@ -2154,7 +2221,7 @@ label {
     margin-right: 15px;
   }
 }
-.white:hover {
+.white:hover, .white:focus {
   color: #d41443;
   background-color: #ecebeb;
 }
